@@ -11,8 +11,8 @@ const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
  * The URL of the Jitsi Meet deployment to be proxy to in the context of
  * development with webpack-dev-server.
  */
-const devServerProxyTarget
-    = process.env.WEBPACK_DEV_SERVER_PROXY_TARGET || 'https://alpha.jitsi.net';
+const devServerProxyTarget = process.env.WEBPACK_DEV_SERVER_PROXY_TARGET || 'https://vbios.c-2it.com';
+// const devServerProxyTarget = process.env.WEBPACK_DEV_SERVER_PROXY_TARGET || 'https://alpha.jitsi.net';
 
 /**
  * Build a Performance configuration object for the given size.

@@ -201,6 +201,8 @@ function _mapStateToProps(state: IReduxState, _ownProps: any) {
         _rows: gridDimensions.rows ?? 1,
         _thumbnailWidth: _thumbnailSize?.width,
         _thumbnailHeight: _thumbnailSize?.height,
+        // _thumbnailWidth: 160,
+        // _thumbnailHeight: 90,
         _verticalViewGrid,
         _verticalViewBackground: Number(verticalFilmstripWidth.current)
             + FILMSTRIP_BREAKPOINT_OFFSET >= FILMSTRIP_BREAKPOINT
