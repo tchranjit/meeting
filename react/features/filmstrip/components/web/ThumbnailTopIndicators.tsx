@@ -118,32 +118,32 @@ const ThumbnailTopIndicators = ({
 
     return (<>
         <div className = { styles.container }>
+            <RaisedHandIndicator
+                iconSize = { _indicatorIconSize }
+                participantId = { participantId }
+                tooltipPosition = { tooltipPosition } />
             <PinnedIndicator
                 iconSize = { _indicatorIconSize }
                 participantId = { participantId }
                 tooltipPosition = { tooltipPosition } />
-            {!_connectionIndicatorDisabled
+            {/* {!_connectionIndicatorDisabled
                 && <ConnectionIndicator
                     alwaysVisible = { showConnectionIndicator }
                     enableStatsDisplay = { true }
                     iconSize = { _indicatorIconSize }
                     participantId = { participantId }
                     statsPopoverPosition = { STATS_POPOVER_POSITION[thumbnailType] } />
-            }
-            <RaisedHandIndicator
-                iconSize = { _indicatorIconSize }
-                participantId = { participantId }
-                tooltipPosition = { tooltipPosition } />
-            {thumbnailType !== THUMBNAIL_TYPE.TILE && (
+            } */}
+            {/* {thumbnailType !== THUMBNAIL_TYPE.TILE && (
                 <div className = { cx(indicatorsClassName, 'top-indicators') }>
                     <StatusIndicators
                         participantID = { participantId }
                         screenshare = { false } />
                 </div>
-            )}
+            )} */}
         </div>
         <div className = { styles.container }>
-            <VideoMenuTriggerButton
+            {!local && <VideoMenuTriggerButton
                 hidePopover = { hidePopover }
                 local = { local }
                 participantId = { participantId }
@@ -151,6 +151,7 @@ const ThumbnailTopIndicators = ({
                 showPopover = { showPopover }
                 thumbnailType = { thumbnailType }
                 visible = { isHovered } />
+            }
         </div>
     </>);
 };

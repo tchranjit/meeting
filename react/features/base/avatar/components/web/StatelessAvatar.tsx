@@ -136,7 +136,8 @@ const StatelessAvatar = ({
 
     const _getAvatarStyle = (backgroundColor?: string) => {
         return {
-            background: backgroundColor || undefined,
+            background: '#dbf1ff', //backgroundColor || undefined,
+            color: '#2c3e50',
             fontSize: size ? size * 0.4 : '180%',
             height: size || '100%',
             width: size || '100%'

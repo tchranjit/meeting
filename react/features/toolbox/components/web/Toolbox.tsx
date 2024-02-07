@@ -470,7 +470,8 @@ const Toolbox = ({
 
     return (
         <div
-            className = { cx(rootClassNames, _shiftUp && 'shift-up') }
+            // className = { cx(rootClassNames, _shiftUp && 'shift-up') }
+            className = { cx(rootClassNames) }
             id = 'new-toolbox'>
             {renderToolboxContent()}
         </div>

@@ -155,7 +155,7 @@ const VirtualScreenshareParticipant = ({
                     participantId = { participantId }
                     thumbnailType = { thumbnailType } />
             </div>
-            {shouldDisplayTintBackground && <div className = { classes.tintBackground } />}
+            {/* {shouldDisplayTintBackground && <div className = { classes.tintBackground } />} */}
             <div
                 className = { clsx(classes.indicatorsContainer,
                         classes.indicatorsBottomContainer,

@@ -216,12 +216,11 @@ class Conference extends AbstractConference<IProps, any> {
                 onMouseLeave = { this._onMouseLeave }
                 onMouseMove = { this._onMouseMove }
                 ref = { this._setBackground }>
-                <Chat />
                 <div
                     className = { _layoutClassName }
                     id = 'videoconference_page'
                     onMouseMove = { isMobileBrowser() ? undefined : this._onShowToolbar }>
-                    <ConferenceInfo />
+                    {/* <ConferenceInfo /> */}
                     <Notice />
                     <div
                         id = 'videospace'
@@ -236,8 +235,8 @@ class Conference extends AbstractConference<IProps, any> {
                         }
                     </div>
 
-                    { _showPrejoin || _showLobby || (
-                        <>
+                    {/* { _showPrejoin || _showLobby || (
+                        <> */}
                             <span
                                 aria-level = { 1 }
                                 className = 'sr-only'
@@ -245,8 +244,8 @@ class Conference extends AbstractConference<IProps, any> {
                                 { t('toolbar.accessibilityLabel.heading') }
                             </span>
                             <Toolbox />
-                        </>
-                    )}
+                        {/* </>
+                    )} */}
 
                     {_notificationsVisible && !_isAnyOverlayVisible && (_overflowDrawer
                         ? <JitsiPortal className = 'notification-portal'>
@@ -257,9 +256,10 @@ class Conference extends AbstractConference<IProps, any> {
 
                     <CalleeInfoContainer />
 
-                    { _showPrejoin && <Prejoin />}
-                    { _showLobby && <LobbyScreen />}
+                    {/* { _showPrejoin && <Prejoin />}
+                    { _showLobby && <LobbyScreen />} */}
                 </div>
+                <Chat />
                 <ParticipantsPane />
                 <ReactionAnimations />
             </div>

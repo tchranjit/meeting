@@ -3,6 +3,8 @@
     position: relative;
     transform: translate3d(0, 0, 0);
     width: 100%;
+    display: flex;
+    flex-flow: column;
 }
 
 #layout_wrapper {
@@ -12,15 +14,17 @@
 }
 
 #videospace {
-    display: block;
-    height: 100%;
+    display: flex;
+    flex-grow: 1;
+    // height: 100%;
     width: 100%;
-    min-height: 100%;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    right: 0px;
+    // min-height: 100%;
+    // position: absolute;
+    // top: 0px;
+    // left: 0px;
+    // right: 0px;
     overflow: hidden;
+
 }
 
 #largeVideoBackgroundContainer,
@@ -175,7 +179,7 @@
 .videocontainer>.audioindicator-container {
     position: absolute;
     display: inline-block;
-    left: 6px;
+    right: 6px;
     top: 50%;
     margin-top: -17px;
     width: 6px;
@@ -205,7 +209,7 @@
         border-radius: 50%;
         -webkit-filter: blur(0.5px);
         filter: blur(0.5px);
-        background: #44A5FF;
+        background: #FF540C;
     }
 }
 

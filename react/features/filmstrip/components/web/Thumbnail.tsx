@@ -273,7 +273,8 @@ const defaultStyles = (theme: Theme) => {
             left: 0,
 
             '&.tile-view-mode': {
-                padding: theme.spacing(2)
+                // padding: theme.spacing(2)
+                padding: '1px'
             }
         },
 
@@ -310,7 +311,9 @@ const defaultStyles = (theme: Theme) => {
             height: '100%',
             width: '100%',
             borderRadius: '4px',
-            backgroundColor: theme.palette.ui02
+            // backgroundColor: theme.palette.ui02
+            backgroundColor: '#ffffff',
+            border: '1px solid #ececec'
         },
 
         borderIndicator: {
@@ -328,8 +331,19 @@ const defaultStyles = (theme: Theme) => {
 
         activeSpeaker: {
             '& .active-speaker-indicator': {
-                boxShadow: `inset 0px 0px 0px 3px ${theme.palette.action01Hover} !important`
-            }
+                // boxShadow: `inset 0px 0px 0px 3px ${theme.palette.action01Hover} !important`
+                boxShadow: `inset 0px 0px 0px 3px #fcd36a !important`
+            },
+            '& .bottom-indicators': {
+                backgroundColor: `#fcd36a !important`,
+                color: '#414141 !important'
+            },
+            '& .bottom-indicators .displayname': {
+                color: '#414141 !important'
+            },
+            '& .bottom-indicators .jitsi-icon-default svg': {
+                fill: '#414141 !important'
+            },
         },
 
         raisedHand: {
@@ -724,6 +738,7 @@ class Thumbnail extends Component<IProps, IState> {
                 height: `${_height}px`,
                 minHeight: `${_height}px`,
                 minWidth: `${_width}px`,
+                // aspectRatio: (16 / 9),
                 width: `${_width}px`
             },
             avatar: {
@@ -1136,7 +1151,7 @@ class Thumbnail extends Component<IProps, IState> {
                         showPopover = { this._showPopover }
                         thumbnailType = { _thumbnailType } />
                 </div>
-                {_shouldDisplayTintBackground && <div className = { classes.tintBackground } />}
+                {/* {_shouldDisplayTintBackground && <div className = { classes.tintBackground } />} */}
                 {!_gifSrc && this._renderAvatar(styles.avatar) }
                 { !local && (
                     <div className = 'presence-label-container'>

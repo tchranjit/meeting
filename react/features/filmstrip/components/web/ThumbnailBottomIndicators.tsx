@@ -10,6 +10,7 @@ import {
 import { isScreenShareParticipantById } from '../../../base/participants/functions';
 import DisplayName from '../../../display-name/components/web/DisplayName';
 
+import PinnedIndicator from './PinnedIndicator';
 import StatusIndicators from './StatusIndicators';
 
 interface IProps {
@@ -71,14 +72,6 @@ const ThumbnailBottomIndicators = ({
 
     return (<div className = { cx(className, 'bottom-indicators') }>
         {
-            showStatusIndicators && <StatusIndicators
-                audio = { !isVirtualScreenshareParticipant }
-                moderator = { true }
-                participantID = { participantId }
-                screenshare = { isVirtualScreenshareParticipant }
-                thumbnailType = { thumbnailType } />
-        }
-        {
             _showDisplayName && (
                 <span className = { styles.nameContainer }>
                     <DisplayName
@@ -89,6 +82,14 @@ const ThumbnailBottomIndicators = ({
                         thumbnailType = { thumbnailType } />
                 </span>
             )
+        }
+        {
+            showStatusIndicators && <StatusIndicators
+                audio = { !isVirtualScreenshareParticipant }
+                moderator = { true }
+                participantID = { participantId }
+                screenshare = { isVirtualScreenshareParticipant }
+                thumbnailType = { thumbnailType } />
         }
     </div>);
 };

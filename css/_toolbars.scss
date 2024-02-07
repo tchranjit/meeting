@@ -24,9 +24,9 @@
  */
 .new-toolbox {
     bottom: calc((#{$newToolbarSize} * 2) * -1);
-    left: 0;
-    position: absolute;
-    right: 0;
+    // position: absolute;
+    // left: 0;
+    // right: 0;
     transition: bottom .3s ease-in;
     width: 100%;
     pointer-events: none;
@@ -53,7 +53,7 @@
     align-items: center;
     box-sizing: border-box;
     display: flex;
-    margin-bottom: 16px;
+    margin-bottom: 0;
     position: relative;
     z-index: $toolbarZ;
     pointer-events: none;
@@ -93,7 +93,7 @@
 
 .toolbox-content-wrapper::after {
     content: '';
-    background: $newToolbarBackgroundColor;
+    // background: $newToolbarBackgroundColor;
     padding-bottom: env(safe-area-inset-bottom, 0);
 }
 
@@ -105,6 +105,7 @@
 
 div.hangup-button {
     background-color: #CB2233;
+    border-radius: 50%;
 
     @media (hover: hover) and (pointer: fine) {
         &:hover {

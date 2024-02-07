@@ -210,20 +210,23 @@ export const commonStyles = (theme: Theme) => {
 
         '.toolbox-icon': {
             display: 'flex',
-            borderRadius: 3,
+            borderRadius: '50%',
             flexDirection: 'column' as const,
             fontSize: 24,
             height: 48,
             justifyContent: 'center',
             width: 48,
+            backgroundColor: '#f0f0f0',
 
             '@media (hover: hover) and (pointer: fine)': {
                 '&:hover': {
-                    backgroundColor: theme.palette.ui04
+                    // backgroundColor: theme.palette.ui04
+                    backgroundColor: '#d7dddd'
                 },
 
                 '&:active': {
-                    backgroundColor: theme.palette.ui03
+                    // backgroundColor: theme.palette.ui03
+                    backgroundColor: '#cdd5d5'
                 }
             },
             [theme.breakpoints.down(320)]: {
@@ -232,7 +235,18 @@ export const commonStyles = (theme: Theme) => {
             },
 
             '&.toggled': {
-                backgroundColor: theme.palette.ui03
+                // backgroundColor: theme.palette.ui03
+                backgroundColor: '#cdd5d5'
+            },
+
+            '& .hangup-button svg': {
+                // fill: `${theme.palette.text03} !important`
+                fill: '#FFFFFF !important'
+            },
+
+            '& :not(.hangup-button) svg': {
+                // fill: `${theme.palette.text03} !important`
+                fill: '#232323 !important'
             },
 
             '&.disabled': {
@@ -240,7 +254,8 @@ export const commonStyles = (theme: Theme) => {
                 backgroundColor: `${theme.palette.disabled01} !important`,
 
                 '& svg': {
-                    fill: `${theme.palette.text03} !important`
+                    // fill: `${theme.palette.text03} !important`
+                    fill: '#232323 !important'
                 }
             }
         },
@@ -254,14 +269,14 @@ export const commonStyles = (theme: Theme) => {
         },
 
         '.toolbox-content-items': {
-            background: theme.palette.ui01,
+            background: '#FFFFFF',
             borderRadius: 6,
             margin: '0 auto',
             padding: 6,
             textAlign: 'center' as const,
             pointerEvents: 'all' as const,
             display: 'flex',
-            boxShadow: '0px 2px 8px 4px rgba(0, 0, 0, 0.25), 0px 0px 0px 1px rgba(0, 0, 0, 0.15)',
+            // boxShadow: '0px 2px 8px 4px rgba(0, 0, 0, 0.25), 0px 0px 0px 1px rgba(0, 0, 0, 0.15)',
 
             '& > div': {
                 marginRight: theme.spacing(2),

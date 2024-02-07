@@ -18,7 +18,7 @@ export const TILE_ASPECT_RATIO = 16 / 9;
 /**
  * The aspect ratio of a square tile in tile view.
  */
-export const SQUARE_TILE_ASPECT_RATIO = 1;
+export const SQUARE_TILE_ASPECT_RATIO = 16 / 9;
 
 /**
  * Width below which the overflow menu(s) will be displayed as drawer(s).
