@@ -119,7 +119,7 @@ var interfaceConfig = {
      * @type {boolean}
      */
     RECENT_LIST_ENABLED: true,
-    REMOTE_THUMBNAIL_RATIO: 1, // 1:1
+    REMOTE_THUMBNAIL_RATIO: 16 / 9, // 1:1
 
     SETTINGS_SECTIONS: [ 'devices', 'language', 'moderator', 'profile', 'calendar', 'sounds', 'more' ],
 
@@ -146,7 +146,7 @@ var interfaceConfig = {
      * If indicated some of the error dialogs may point to the support URL for
      * help.
      */
-    SUPPORT_URL: 'https://community.jitsi.org/',
+    SUPPORT_URL: 'https://athuddle.com/',
 
     // Browsers, in addition to those which do not fully support WebRTC, that
     // are not supported and should show the unsupported browser page.
@@ -254,7 +254,7 @@ var interfaceConfig = {
     // LIVE_STREAMING_HELP_LINK: 'https://jitsi.org/live',
 
     // Moved to config.js as `toolbarConfig.alwaysVisible`.
-    // TOOLBAR_ALWAYS_VISIBLE: false,
+    TOOLBAR_ALWAYS_VISIBLE: true,
 
     // This config was moved to config.js as `toolbarButtons`.
     // TOOLBAR_BUTTONS: [],

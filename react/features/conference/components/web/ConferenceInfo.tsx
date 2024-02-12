@@ -118,6 +118,7 @@ class ConferenceInfo extends Component<IProps> {
 
         this._renderAutoHide = this._renderAutoHide.bind(this);
         this._renderAlwaysVisible = this._renderAlwaysVisible.bind(this);
+        this._renderSettingsPanel = this._renderSettingsPanel.bind(this);
         this._onTabIn = this._onTabIn.bind(this);
     }
 
@@ -188,6 +189,34 @@ class ConferenceInfo extends Component<IProps> {
     }
 
     /**
+     * Renders the always visible info header labels.
+     *
+     * @returns {void}
+     */
+    _renderSettingsPanel() {
+        // const { alwaysVisible } = this.props._conferenceInfo;
+
+        // if (!alwaysVisible?.length) {
+        //     return null;
+        // }
+
+        return (
+            <ConferenceInfoContainer
+                id = 'alwaysVisible'
+                visible = { true } >
+                    <></>
+                {/* {
+                    COMPONENTS
+                        .filter(comp => alwaysVisible.includes(comp.id))
+                        .map(c =>
+                            <c.Component key = { c.id } />
+                        )
+                } */}
+            </ConferenceInfoContainer>
+        );
+    }
+
+    /**
      * Implements React's {@link Component#render()}.
      *
      * @inheritdoc
@@ -200,6 +229,7 @@ class ConferenceInfo extends Component<IProps> {
                 onFocus = { this._onTabIn }>
                 { this._renderAlwaysVisible() }
                 { this._renderAutoHide() }
+                { this._renderSettingsPanel() }
             </div>
         );
     }

@@ -106,12 +106,13 @@ const useStyles = makeStyles()(theme => {
         name: {
             overflow: 'hidden',
             textOverflow: 'ellipsis',
-            whiteSpace: 'nowrap'
+            whiteSpace: 'nowrap',
+            color: `#414141`
         },
 
         moderatorLabel: {
             ...withPixelLineHeight(theme.typography.labelBold),
-            color: theme.palette.text03
+            color: `#414141`
         },
 
         avatar: {

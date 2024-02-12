@@ -60,6 +60,18 @@
         });
     </script>
     <script>
+        function makeid(length) {
+            let result = '';
+            const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+            const charactersLength = characters.length;
+            let counter = 0;
+            while (counter < length) {
+            result += characters.charAt(Math.floor(Math.random() * charactersLength));
+            counter += 1;
+            }
+            return result;
+        }
+        var v = makeid(1);
         // IE11 and earlier can be identified via their user agent and be
         // redirected to a page that is known to have no newer js syntax.
         if (window.navigator.userAgent.match(/(MSIE|Trident)/)) {
@@ -76,10 +88,10 @@
             "config.js",
             "utils.js",
             "do_external_connect.js",
-            "interface_config.js",
+            "interface_config.js?v=" + v,
             "lib-jitsi-meet.min.js",
-            "app.bundle.min.js",
-            "all.css"
+            "app.bundle.min.js?v=" + v,
+            "all.css?v=" + v
         ];
         var loadErrHandler = function(e) {
             var target = e.target;

@@ -246,7 +246,7 @@ export const commonStyles = (theme: Theme) => {
 
             '& :not(.hangup-button) svg': {
                 // fill: `${theme.palette.text03} !important`
-                fill: '#232323 !important'
+                fill: '#232323'
             },
 
             '&.disabled': {

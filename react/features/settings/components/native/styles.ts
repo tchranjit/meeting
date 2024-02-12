@@ -49,7 +49,7 @@ export default {
 
     displayName: {
         ...BaseTheme.typography.bodyLongRegularLarge,
-        color: BaseTheme.palette.text01,
+        // color: BaseTheme.palette.text01,
         marginLeft: BaseTheme.spacing[3],
         position: 'relative'
     },

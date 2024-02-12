@@ -84,17 +84,19 @@ const useStyles = makeStyles()(theme => {
     return {
         container: {
             alignItems: 'center',
-            color: theme.palette.text01,
+            // color: theme.palette.text01,
+            color: `#414141`,
             display: 'flex',
             ...withPixelLineHeight(theme.typography.bodyShortBold),
             margin: `0 -${participantsPaneTheme.panePadding}px`,
             padding: `${theme.spacing(2)} ${participantsPaneTheme.panePadding}px`,
             position: 'relative',
-            boxShadow: 'inset 0px -1px 0px rgba(255, 255, 255, 0.15)',
+            // boxShadow: 'inset 0px -1px 0px rgba(255, 255, 255, 0.15)',
             minHeight: '40px',
 
             '&:hover, &:focus-within': {
-                backgroundColor: theme.palette.ui02,
+                // backgroundColor: theme.palette.ui02,
+                backgroundColor: `#f0f0f0`,
 
                 '& .indicators': {
                     display: 'none'
@@ -104,8 +106,9 @@ const useStyles = makeStyles()(theme => {
                     display: 'flex',
                     position: 'relative',
                     top: 'auto',
-                    boxShadow: `-15px 0px 10px -5px ${theme.palette.ui02}`,
-                    backgroundColor: theme.palette.ui02
+                    // boxShadow: `-15px 0px 10px -5px ${theme.palette.ui02}`,
+                    // backgroundColor: theme.palette.ui02
+                    backgroundColor: `#f0f0f0`
                 }
             },
 
@@ -116,14 +119,16 @@ const useStyles = makeStyles()(theme => {
         },
 
         highlighted: {
-            backgroundColor: theme.palette.ui02,
+            // backgroundColor: theme.palette.ui02,
+            backgroundColor: `#cdd5d5`,
 
             '& .actions': {
                 display: 'flex',
                 position: 'relative',
                 top: 'auto',
-                boxShadow: `-15px 0px 10px -5px ${theme.palette.ui02}`,
-                backgroundColor: theme.palette.ui02
+                // boxShadow: `-15px 0px 10px -5px ${theme.palette.ui02}`,
+                // backgroundColor: theme.palette.ui02
+                backgroundColor: `#cdd5d5`
             }
         },
 
@@ -171,20 +176,23 @@ const useStyles = makeStyles()(theme => {
         actionsContainer: {
             position: 'absolute',
             top: '-1000px',
-            boxShadow: `-15px 0px 10px -5px ${theme.palette.ui02}`,
-            backgroundColor: theme.palette.ui02
+            // boxShadow: `-15px 0px 10px -5px ${theme.palette.ui02}`,
+            // backgroundColor: theme.palette.ui02
+            backgroundColor: `#cdd5d5`
         },
 
         actionsPermanent: {
             display: 'flex',
-            boxShadow: `-15px 0px 10px -5px ${theme.palette.ui01}`,
-            backgroundColor: theme.palette.ui01
+            // boxShadow: `-15px 0px 10px -5px ${theme.palette.ui01}`,
+            // backgroundColor: theme.palette.ui01
+            backgroundColor: `#cdd5d5`
         },
 
         actionsVisible: {
             display: 'flex',
-            boxShadow: `-15px 0px 10px -5px ${theme.palette.ui02}`,
-            backgroundColor: theme.palette.ui02
+            // boxShadow: `-15px 0px 10px -5px ${theme.palette.ui02}`,
+            // backgroundColor: theme.palette.ui02
+            backgroundColor: `#cdd5d5`
         }
     };
 });

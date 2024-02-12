@@ -449,7 +449,6 @@ class Filmstrip extends PureComponent <IProps, IState> {
                     role = 'heading'>
                     { t('filmstrip.accessibilityLabel.heading') }
                 </span>
-                { toolbar }
                 {_resizableFilmstrip
                     ? <div
                         className = { clsx('resizable-filmstrip', classes.resizableFilmstripContainer,
@@ -467,6 +466,7 @@ class Filmstrip extends PureComponent <IProps, IState> {
                     </div>
                     : filmstrip
                 }
+                { toolbar }
                 <AudioTracksContainer />
             </div>
         );
@@ -725,7 +725,7 @@ class Filmstrip extends PureComponent <IProps, IState> {
         const props: any = {
             itemCount: _remoteParticipantsLength,
             className: `filmstrip__videos remote-videos ${_resizableFilmstrip ? '' : 'height-transition'}`,
-            height: _filmstripHeight,
+            height: `${_currentLayout === LAYOUTS.HORIZONTAL_FILMSTRIP_VIEW ? 'auto' : _filmstripHeight}`,
             itemKey: this._listItemKey,
             itemSize: 0,
             onItemsRendered: this._onListItemsRendered,
@@ -850,26 +850,27 @@ class Filmstrip extends PureComponent <IProps, IState> {
             : { onClick: this._onToolbarToggleFilmstrip };
 
         return (
-            <div
-                className = { clsx(classes.toggleFilmstripContainer,
-                    _isVerticalFilmstrip && classes.toggleVerticalFilmstripContainer,
-                    _topPanelFilmstrip && classes.toggleTopPanelContainer,
-                    _topPanelFilmstrip && !_topPanelVisible && classes.toggleTopPanelContainerHidden,
-                    'toggleFilmstripContainer') }>
-                <button
-                    aria-expanded = { this.props._mainFilmstripVisible }
-                    aria-label = { t('toolbar.accessibilityLabel.toggleFilmstrip') }
-                    className = { classes.toggleFilmstripButton }
-                    id = 'toggleFilmstripButton'
-                    onFocus = { this._onTabIn }
-                    tabIndex = { 0 }
-                    { ...actions }>
-                    <Icon
-                        aria-label = { t('toolbar.accessibilityLabel.toggleFilmstrip') }
-                        size = { 24 }
-                        src = { icon } />
-                </button>
-            </div>
+            <></>
+            // <div
+            //     className = { clsx(classes.toggleFilmstripContainer,
+            //         _isVerticalFilmstrip && classes.toggleVerticalFilmstripContainer,
+            //         _topPanelFilmstrip && classes.toggleTopPanelContainer,
+            //         _topPanelFilmstrip && !_topPanelVisible && classes.toggleTopPanelContainerHidden,
+            //         'toggleFilmstripContainer') }>
+            //     <button
+            //         aria-expanded = { this.props._mainFilmstripVisible }
+            //         aria-label = { t('toolbar.accessibilityLabel.toggleFilmstrip') }
+            //         className = { classes.toggleFilmstripButton }
+            //         id = 'toggleFilmstripButton'
+            //         onFocus = { this._onTabIn }
+            //         tabIndex = { 0 }
+            //         { ...actions }>
+            //         <Icon
+            //             aria-label = { t('toolbar.accessibilityLabel.toggleFilmstrip') }
+            //             size = { 24 }
+            //             src = { icon } />
+            //     </button>
+            // </div>
         );
     }
 }

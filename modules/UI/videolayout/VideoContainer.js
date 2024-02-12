@@ -315,6 +315,7 @@ export class VideoContainer extends LargeContainer {
      */
     _getVideoSize(containerWidth, containerHeight, verticalFilmstripWidth) {
         const { width, height } = this.getStreamSize();
+        console.log(["UPDATE CHECK", width, height]);
 
         if (this.stream && this.isScreenSharing()) {
             return computeDesktopVideoSize(width,
@@ -413,12 +414,14 @@ export class VideoContainer extends LargeContainer {
         if (currentLayout === LAYOUTS.TILE_VIEW || currentLayout === LAYOUTS.STAGE_FILMSTRIP_VIEW) {
             // We don't need to resize the large video since it won't be displayed and we'll resize when returning back
             // to stage view.
-            return;
+            // return;
         }
 
         this.positionRemoteStatusMessages();
 
-        const [ width, height ] = this._getVideoSize(containerWidth, containerHeight, verticalFilmstripWidth);
+        console.log(["UPDATE CHECK", containerWidth, containerHeight, verticalFilmstripWidth]);
+        const [ width, height ] = this._getVideoSize(containerWidth, (containerHeight - 62), verticalFilmstripWidth);
+        console.log(["UPDATE CHECK", width, height])
 
         if (width === 0 || height === 0) {
             // We don't need to set 0 for width or height since the visibility is controlled by the visibility css prop

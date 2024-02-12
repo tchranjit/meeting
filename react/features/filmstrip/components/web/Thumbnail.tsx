@@ -288,7 +288,7 @@ const defaultStyles = (theme: Theme) => {
         },
 
         indicatorsBackground: {
-            backgroundColor: 'rgba(0, 0, 0, 0.7)',
+            backgroundColor: 'rgba(215, 221, 221, 0.7)',
             borderRadius: '4px',
             display: 'flex',
             alignItems: 'center',
@@ -336,13 +336,13 @@ const defaultStyles = (theme: Theme) => {
             },
             '& .bottom-indicators': {
                 backgroundColor: `#fcd36a !important`,
-                color: '#414141 !important'
+                color: `#414141 !important`
             },
             '& .bottom-indicators .displayname': {
-                color: '#414141 !important'
+                color: `#414141 !important`
             },
             '& .bottom-indicators .jitsi-icon-default svg': {
-                fill: '#414141 !important'
+                fill: `#414141 !important`
             },
         },
 

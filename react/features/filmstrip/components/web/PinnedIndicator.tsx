@@ -34,11 +34,12 @@ interface IProps {
 const useStyles = makeStyles()(() => {
     return {
         pinnedIndicator: {
-            backgroundColor: 'rgba(0, 0, 0, .7)',
+            backgroundColor: 'rgba(215, 221, 221, .7)',
             padding: '4px',
+            borderRadius: '50%',
             zIndex: 3,
             display: 'inline-block',
-            borderRadius: '4px',
+            // borderRadius: '4px',
             boxSizing: 'border-box'
         }
     };

@@ -43,7 +43,7 @@ const useStyles = makeStyles()((theme: Theme) => {
             display: 'flex',
             position: 'relative' as const,
             borderRadius: `${theme.shape.borderRadius}px`,
-            boxShadow: '0px 6px 20px rgba(0, 0, 0, 0.25)',
+            // boxShadow: '0px 6px 20px rgba(0, 0, 0, 0.25)',
             marginBottom: theme.spacing(2),
 
             '&:last-of-type': {
@@ -76,10 +76,10 @@ const useStyles = makeStyles()((theme: Theme) => {
         },
 
         ribbon: {
-            width: '4px',
+            width: '8px',
             height: 'calc(100% - 16px)',
             position: 'absolute' as const,
-            left: 0,
+            right: 0,
             top: '8px',
             borderRadius: '4px',
 

@@ -37,7 +37,8 @@ const useStyles = makeStyles()(theme => {
             padding: '10px 16px',
 
             '&:hover': {
-                backgroundColor: theme.palette.ui02
+                // backgroundColor: theme.palette.ui02
+                backgroundColor: `#cdd5d5`
             }
         },
 

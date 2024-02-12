@@ -11,7 +11,7 @@
     z-index: $filmstripVideosZ;
     box-sizing: border-box;
     width: 100%;
-    position: fixed;
+    // position: fixed;
 
     /*
      * Firefox sets flex items to min-height: auto and min-width: auto,
@@ -52,7 +52,7 @@
         &#filmstripLocalScreenShare {
             align-self: flex-end;
             display: block;
-            margin-bottom: 8px;
+            // margin-bottom: 8px;
         }
 
         &.hidden {
@@ -83,7 +83,7 @@
     }
 
     .videocontainer {
-        margin-bottom: 10px;
+        // margin-bottom: 10px;
     }
 }
 

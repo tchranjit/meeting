@@ -220,7 +220,7 @@ class Conference extends AbstractConference<IProps, any> {
                     className = { _layoutClassName }
                     id = 'videoconference_page'
                     onMouseMove = { isMobileBrowser() ? undefined : this._onShowToolbar }>
-                    {/* <ConferenceInfo /> */}
+                    <ConferenceInfo />
                     <Notice />
                     <div
                         id = 'videospace'

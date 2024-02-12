@@ -134,11 +134,13 @@ const MAX_HEIGHT = 400;
 const useStyles = makeStyles()(theme => {
     return {
         contextMenu: {
-            backgroundColor: theme.palette.ui01,
-            border: `1px solid ${theme.palette.ui04}`,
+            // backgroundColor: theme.palette.ui01,
+            backgroundColor: `#f0f0f0`,
+            border: `1px solid #cdd5d5`,
             borderRadius: `${Number(theme.shape.borderRadius)}px`,
-            boxShadow: '0px 1px 2px rgba(41, 41, 41, 0.25)',
-            color: theme.palette.text01,
+            // boxShadow: '0px 1px 2px rgba(41, 41, 41, 0.25)',
+            // color: theme.palette.text01,
+            color: `#414141`,
             ...withPixelLineHeight(theme.typography.bodyShortRegular),
             marginTop: '48px',
             position: 'absolute',
@@ -162,7 +164,8 @@ const useStyles = makeStyles()(theme => {
                 ...withPixelLineHeight(theme.typography.bodyShortRegularLarge),
 
                 '& svg': {
-                    fill: theme.palette.icon01
+                    // fill: theme.palette.icon01
+                    fill: `#414141`
                 }
             }
         }

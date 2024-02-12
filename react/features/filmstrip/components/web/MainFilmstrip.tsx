@@ -147,7 +147,6 @@ function _mapStateToProps(state: IReduxState, _ownProps: any) {
             && _currentLayout !== LAYOUTS.STAGE_FILMSTRIP_VIEW));
 
     let _thumbnailSize, remoteFilmstripHeight, remoteFilmstripWidth;
-
     switch (_currentLayout) {
     case LAYOUTS.TILE_VIEW:
         _hasScroll = Boolean(tileViewHasScroll);

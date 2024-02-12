@@ -31,7 +31,8 @@ import VisitorsList from './VisitorsList';
 const useStyles = makeStyles()(theme => {
     return {
         participantsPane: {
-            backgroundColor: theme.palette.ui01,
+            // backgroundColor: theme.palette.ui01,
+            backgroundColor: `#ffffff`,
             flexShrink: 0,
             overflow: 'hidden',
             position: 'relative',

@@ -45,7 +45,7 @@ const useStyles = makeStyles()(() => {
     return {
         container: {
             position: 'absolute',
-            left: '16px',
+            right: '16px',
             bottom: '84px',
             width: '320px',
             maxWidth: '100%',

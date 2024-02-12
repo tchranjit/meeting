@@ -15,7 +15,7 @@ export const styles = (theme: Theme) => {
             flexWrap: 'nowrap' as const,
             alignItems: 'center',
             justifyContent: 'center',
-            backgroundColor: BACKGROUND_COLOR,
+            // backgroundColor: BACKGROUND_COLOR,
             width: '32px',
             height: '24px',
             position: 'absolute' as const,
@@ -27,7 +27,7 @@ export const styles = (theme: Theme) => {
             zIndex: 1,
 
             '&:hover, &:focus-within': {
-                backgroundColor: theme.palette.ui02
+                // backgroundColor: theme.palette.ui02
             }
         },
 
@@ -72,11 +72,11 @@ export const styles = (theme: Theme) => {
 
             '&:hover, &:focus-within': {
                 '& .resizable-filmstrip': {
-                    backgroundColor: BACKGROUND_COLOR
+                    // backgroundColor: BACKGROUND_COLOR
                 },
 
                 '& .filmstrip-hover': {
-                    backgroundColor: BACKGROUND_COLOR
+                    // backgroundColor: BACKGROUND_COLOR
                 },
 
                 '& .toggleFilmstripContainer': {
@@ -92,7 +92,7 @@ export const styles = (theme: Theme) => {
                 bottom: '-50px',
 
                 '&:hover': {
-                    backgroundColor: 'transparent'
+                    // backgroundColor: 'transparent'
                 }
             },
 
@@ -104,10 +104,10 @@ export const styles = (theme: Theme) => {
         },
 
         filmstripBackground: {
-            backgroundColor: theme.palette.uiBackground,
+            // backgroundColor: theme.palette.uiBackground,
 
             '&:hover, &:focus-within': {
-                backgroundColor: theme.palette.uiBackground
+                // backgroundColor: theme.palette.uiBackground
             }
         },
 
@@ -143,7 +143,7 @@ export const styles = (theme: Theme) => {
 
             '&:hover': {
                 '& .dragHandle': {
-                    backgroundColor: theme.palette.icon01
+                    // backgroundColor: theme.palette.icon01
                 }
             },
 
@@ -151,7 +151,7 @@ export const styles = (theme: Theme) => {
                 visibility: 'visible',
 
                 '& .dragHandle': {
-                    backgroundColor: theme.palette.icon01
+                    // backgroundColor: theme.palette.icon01
                 }
             },
 
@@ -169,7 +169,7 @@ export const styles = (theme: Theme) => {
         },
 
         dragHandle: {
-            backgroundColor: theme.palette.icon02,
+            // backgroundColor: theme.palette.icon02,
             height: '100px',
             width: '3px',
             borderRadius: '1px'

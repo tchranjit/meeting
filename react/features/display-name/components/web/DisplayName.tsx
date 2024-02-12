@@ -50,7 +50,7 @@ const useStyles = makeStyles()(theme => {
     return {
         displayName: {
             ...withPixelLineHeight(theme.typography.labelBold),
-            color: theme.palette.text01,
+            // color: theme.palette.text01,
             overflow: 'hidden',
             textOverflow: 'ellipsis',
             whiteSpace: 'nowrap'

@@ -126,7 +126,7 @@ function MeetingParticipants({
                         breakoutRoomJid = { currentRoom?.jid }
                         name = { currentRoom?.name } /> }
             </div>
-            {showInviteButton && <InviteButton />}
+            {/* {showInviteButton && <InviteButton />} */}
             <Input
                 accessibilityLabel = { t('participantsPane.search') }
                 className = { styles.search }

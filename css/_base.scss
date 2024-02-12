@@ -9,7 +9,7 @@
 
     // Firefox only
     scrollbar-width: thin;
-    scrollbar-color: rgba(0, 0, 0, .5) transparent;
+    scrollbar-color: rgba(0, 91, 150, .5) transparent;
 }
 
 input,
@@ -45,7 +45,7 @@ body {
 
 .jitsi-icon {
     &-default svg {
-        fill: white;
+        fill: #414141;
     }
 }
 

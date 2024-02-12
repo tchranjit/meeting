@@ -23,7 +23,7 @@ const useStyles = makeStyles()(theme => {
             alignItems: 'center',
             display: 'inline-flex',
             justifyContent: 'center',
-            marginBottom: theme.spacing(7),
+            // marginBottom: theme.spacing(7),
             transition: 'margin-bottom 0.3s',
             pointerEvents: 'none',
             position: 'absolute',
@@ -33,7 +33,7 @@ const useStyles = makeStyles()(theme => {
             zIndex: 1
         },
         containerElevated: {
-            marginBottom: theme.spacing(12)
+            // marginBottom: theme.spacing(12)
         }
     };
 });

@@ -123,22 +123,26 @@ const useStyles = makeStyles()(theme => {
             },
 
             '&:hover': {
-                backgroundColor: theme.palette.ui02
+                // backgroundColor: theme.palette.ui02
+                backgroundColor: `#cdd5d5`
             },
 
             '&:active': {
-                backgroundColor: theme.palette.ui03
+                // backgroundColor: theme.palette.ui03
+                backgroundColor: `#cdd5d5`
             },
 
             '&.focus-visible': {
-                boxShadow: `inset 0 0 0 2px ${theme.palette.action01Hover}`
+                // boxShadow: `inset 0 0 0 2px ${theme.palette.action01Hover}`
             }
         },
 
         selected: {
-            borderLeft: `3px solid ${theme.palette.action01Hover}`,
+            // borderLeft: `3px solid ${theme.palette.action01Hover}`,
+            borderLeft: `3px solid #414141`,
             paddingLeft: '13px',
-            backgroundColor: theme.palette.ui02
+            // backgroundColor: theme.palette.ui02
+            backgroundColor: `#cdd5d5`
         },
 
         contextMenuItemDisabled: {
@@ -151,13 +155,15 @@ const useStyles = makeStyles()(theme => {
 
         contextMenuItemIcon: {
             '& svg': {
-                fill: theme.palette.icon01
+                // fill: theme.palette.icon01
+                fill: `#414141`
             }
         },
 
         text: {
             ...withPixelLineHeight(theme.typography.bodyShortRegular),
-            color: theme.palette.text01
+            // color: theme.palette.text01
+            color: `#414141`
         },
 
         drawerText: {
