@@ -1,4 +1,4 @@
-rootProject.name = 'jitsi-meet'
+rootProject.name = 'meeting'
 
 include ':app', ':sdk'
 

@@ -23,7 +23,7 @@ android {
 
 
     defaultConfig {
-        applicationId 'org.jitsi.meet'
+        applicationId 'com.huddle.meeting'
         versionCode vcode
         versionName project.appVersion
 
